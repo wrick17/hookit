@@ -1,14 +1,14 @@
 {
-  "name": "react-template",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "hookit",
+  "version": "0.0.1",
+  "description": "A PWA app just for the sake of fun",
+  "main": "server.js",
   "scripts": {
     "start": "webpack-dev-server --host 0.0.0.0 --progress --inline --hot",
     "build": "set NODE_ENV=production & webpack -p --progress --inline --config webpack.production.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "wrick17",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "*",
@@ -40,6 +40,7 @@
     "forever": "*",
     "react": "*",
     "react-dom": "*",
+    "react-mdl": "^1.7.2",
     "superagent": "*"
   },
   "babel": {
