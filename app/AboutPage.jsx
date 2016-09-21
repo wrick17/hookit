@@ -10,7 +10,7 @@ export default class AboutPage extends React.Component {
   render() {
     return (
       <Card shadow={0} style={{width: '100%', margin: 'auto'}}>
-        <CardTitle style={{color: '#fff', height: '176px', background: 'url(http://www.getmdl.io/assets/demos/dog.png) bottom right 15% no-repeat #46B6AC'}}>About Us</CardTitle>
+        <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://www.getmdl.io/assets/demos/dog.png) bottom right 15% no-repeat #46B6AC'}}>About Us</CardTitle>
         <CardText>
           Now this is the about section. See what I was talking about?
         </CardText>

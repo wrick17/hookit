@@ -22,7 +22,7 @@ export default class HomePage extends React.Component {
         <Content style={{padding: '20px'}}>
 
           <Card shadow={0} style={{width: '100%', margin: '0 auto 20px'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: 'url(http://www.getmdl.io/assets/demos/welcome_card.jpg) center / cover'}}>Welcome</CardTitle>
+            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://www.getmdl.io/assets/demos/welcome_card.jpg) center / cover'}}>Welcome</CardTitle>
             <CardText>
               This is the home page content. If you want to see more then go to the about page. You will see a lot of more stuff there.
             </CardText>
