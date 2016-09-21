@@ -13,7 +13,7 @@ export default class HeaderComponent extends React.Component {
     return (
       <Header className="header" title={<Link to="/" className="white-text" >Hookit</Link>}>
         <Navigation>
-          <Link to="/about" >ABOUT</Link>
+          <Link to="/subs" >SUBREDDITS</Link>
         </Navigation>
       </Header>
     );

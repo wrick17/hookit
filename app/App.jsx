@@ -3,11 +3,14 @@ require("./app.less");
 import React  from 'react'
 import { createStore, combineReducers } from 'redux'
 import { Provider } from 'react-redux'
-import { Router, Route, browserHistory } from 'react-router'
+import { Router, Route, IndexRoute, browserHistory } from 'react-router'
 import { syncHistoryWithStore, routerReducer } from 'react-router-redux'
 
-import HomePage from './HomePage.jsx'
-import AboutPage from './AboutPage.jsx'
+import HomePage from './homePage/HomePage.jsx'
+import AboutPage from './aboutPage/AboutPage.jsx'
+import Feeds from './feeds/Feeds.jsx'
+import Subs from './subs/Subs.jsx'
+
 import reducers from './reducers/reducers.jsx'
 
 // Add the reducer to your store on the `routing` key
@@ -27,6 +30,10 @@ export default class App extends React.Component {
       <Provider store={store}>
         <Router history={history}>
           <Route path="/" component={HomePage} >
+            <IndexRoute component={Feeds} />
+            <Route path="/feeds(/:sub)" component={Feeds} />
+            <Route path="/feeds(/:r/:sub)" component={Feeds} />
+            <Route path="/subs" component={Subs} />
             <Route path="about" component={AboutPage} />
           </Route>
         </Router>
