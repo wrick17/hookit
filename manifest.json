@@ -1,6 +1,6 @@
 {
-  "name": "Pokemons",
-  "short_name": "Pokemons",
+  "name": "Hookit",
+  "short_name": "Hookit",
   "start_url ": "/",
   "icons": [{
     "src": "images/icon-128x128.png",
@@ -24,6 +24,6 @@
       "type": "image/png"
     }],
   "display": "standalone",
-  "background_color": "#f44336",
-  "theme_color": "#f44336"
+  "background_color": "#3F51B5",
+  "theme_color": "#3F51B5"
 }

@@ -40,7 +40,11 @@
     "forever": "*",
     "react": "*",
     "react-dom": "*",
-    "react-mdl": "^1.7.2",
+    "react-mdl": "*",
+    "react-redux": "*",
+    "react-router": "*",
+    "react-router-redux": "*",
+    "redux": "*",
     "superagent": "*"
   },
   "babel": {
