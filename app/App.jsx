@@ -34,7 +34,7 @@ export default class App extends React.Component {
             <Route path="/feeds(/:sub)" component={Feeds} />
             <Route path="/feeds(/:r/:sub)" component={Feeds} />
             <Route path="/subs" component={Subs} />
-            <Route path="about" component={AboutPage} />
+            <Route path="/about" component={AboutPage} />
           </Route>
         </Router>
       </Provider>
