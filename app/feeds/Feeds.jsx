@@ -61,17 +61,17 @@ export default class Feeds extends React.Component {
     const { feeds } = this.state;
       if (!feeds.length) return <div className="spinn" ><Spinner/></div>;
     return (
-      <List>
+      <List className="feed-list">
         {
           feeds.map((feedObj, idx) => {
             const feed = feedObj.data;
             return (
-              <ListItem key={idx} style={{padding: '5px 10px'}}>
+              <ListItem key={idx} className="feed" style={{padding: '5px'}}>
                 <Link to={feed.url} target="_blank" className="card-warpper">
-                  <Card shadow={0} style={{width: '100%', margin: 'auto', minHeight: '0'}}>
+                  <Card shadow={0} style={{width: '100%', margin: 'auto'}}>
                     {
                       feed.preview &&
-                        <CardTitle style={{color: '#fff', minWidth: '100%', height: '60vw', background: 'url(' + feed.preview.images[0].source.url + ') no-repeat center / cover #46B6AC'}}></CardTitle>
+                        <CardTitle style={{color: '#fff', minWidth: '100%', height: '60vw', maxHeight: '300px', background: 'url(' + feed.preview.images[0].source.url + ') no-repeat center / cover #46B6AC'}}></CardTitle>
                     }
                     <CardText>
                       {feed.title && feed.title}
